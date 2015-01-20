@@ -9,8 +9,9 @@ import org.jsoup.select.Elements;
 
 public class MyWebCrawler {
 	public static int counter = 10;
+	public static String baseURL = "http://mail-archives.apache.org/mod_mbox/maven-users/"; 
 	public static void main(String[] args) {
-		processPage("http://mail-archives.apache.org/mod_mbox/maven-users/");
+		processPage(baseURL);
 	}
 
 	public static void processPage(String URL) {
